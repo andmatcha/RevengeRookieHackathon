@@ -214,6 +214,50 @@ body {
     color: #428eca;
 }
 
+/* Intro */
+
+.Intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.Intro__img-box {
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.Intro__img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.Intro__name {
+    text-align: center;
+    font-size: 2.4rem;
+    letter-spacing: 0.05rem;
+}
+
+.Intro__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 50%;
+}
+
+.Intro__list-item {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 8px;
+    width: 100%;
+    border-bottom:1px solid #d9e7f4;
+}
+
 /* Team */
 
 .Team {
