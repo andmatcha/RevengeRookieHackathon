@@ -50,6 +50,7 @@ body {
 .Header__list-item {
     font-size: 1.1rem;
     font-family: 'Raleway', sans-serif;
+    cursor: pointer;
 }
 
 .Header__official-btn {
@@ -57,6 +58,12 @@ body {
     color: #ffffff;
     padding: 16px;
     border-radius: 12px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.Header__official-btn:hover {
+    box-shadow: 2px 2px 2px #adadad;
+    transform: translate(-2px, -2px);
 }
 
 .Header__menu {
