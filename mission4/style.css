@@ -9,6 +9,7 @@ body {
     width: 100vw;
     box-shadow: 0 1px 4px #cccccc;
     z-index: 10;
+    background-color: #ffffff;
 }
 
 .Header__inner {
@@ -162,3 +163,82 @@ body {
 }
 
 /* Main */
+
+.Main {
+    width: 70vw;
+    margin: 0 15vw;
+    padding-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.Main__section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Main__title {
+    font-size: 2.8rem;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+}
+
+.Main__title::before {
+    content: "";
+    width: 440px;
+    border: 1px solid #d9e7f4;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateX(-100%);
+}
+
+.Main__title::after {
+    content: "";
+    width: 440px;
+    border: 1px solid #d9e7f4;
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translateX(100%);
+}
+
+.Main__subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #428eca;
+}
+
+/* Team */
+
+.Team {
+    width: 100%;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+
+.Team__title {
+    font-size: 2.4rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin: 24px 0;
+}
+
+/* Footer */
+
+.Footer {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Footer__body {
+    text-align: center;
+}
