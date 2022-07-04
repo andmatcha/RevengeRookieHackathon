@@ -380,37 +380,13 @@ body {
     padding: 16px;
     border: 4px solid transparent;
     border-radius: 16px;
-    animation: memory_anime_out 0.2s forwards;
+    transition: 0.2s;
 }
 
 .Memory__img-box:hover {
-    animation: memory_anime 0.2s forwards;
-}
-
-@keyframes memory_anime {
-    0% {
-        border-color: transparent;
-    }
-
-    100% {
-        border-color: #428eca;
-        z-index: 5;
-        transform: scale(1.1, 1.1);
-    }
-}
-
-@keyframes memory_anime_out {
-    0% {
-        border-color: #428eca;
-        z-index: 5;
-        transform: scale(1.1, 1.1);
-    }
-
-    100% {
-        border-color: transparent;
-        z-index: initial;
-        transform: scale(1, 1);
-    }
+    border-color: #428eca;
+    z-index: 5;
+    transform: scale(1.1, 1.1);
 }
 
 .Memory__img-box--left {
