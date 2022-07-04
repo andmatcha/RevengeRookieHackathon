@@ -51,6 +51,36 @@ body {
     font-size: 1.1rem;
     font-family: 'Raleway', sans-serif;
     cursor: pointer;
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+.Header__list-item:hover {
+    color: #57acc7;
+}
+
+.Header__list-item::after {
+    animation: line_anime 0.2s linear;
+}
+
+.Header__list-item:hover::after {
+    content: "";
+    border: 1px solid #57acc7;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes line_anime {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
 
 .Header__official-btn {
